@@ -30,6 +30,7 @@ ws.connect(f"ws://{server_address}/ws?clientId={client_id}")
 
 # Get the images
 images = utils.get_images(ws, prompt, server_address, client_id)
+# image = Image.open(io.BytesIO(image_data))
 
 # Save the images optional
 for node_id in images:
